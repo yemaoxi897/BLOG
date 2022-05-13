@@ -10,9 +10,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://39.99.226.206:3306/blog?serverTimezone=Asia/Shanghai&allowMultiQueries=true
-    username: root
-    password: 15920363077yes
+    url: jdbc:mysql://ip:3306/blog?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: 
+    password: 
     hikari:
       minimum-idle: 5
       # 空闲连接存活最大时间，默认600000（10分钟）
@@ -30,12 +30,12 @@ spring:
       connection-test-query: SELECT 1
   # redis配置
   redis:
-    host: 39.99.226.206
+    host: 
     port: 6379
-    password: 15920363077yes
+    password: 
   # mq配置
   rabbitmq:
-    host: 39.99.226.206
+    host: 
     port: 5672
     username: guest
     password: guest
@@ -48,7 +48,7 @@ spring:
   # es配置 若搜索模式为mysql可删除
   elasticsearch:
     rest:
-      uris: 39.99.226.206:9200
+      uris: ip:9200
   # 邮箱配置
   mail:
     host: smtp.qq.com
@@ -89,11 +89,11 @@ upload:
     # 本地文件存储路径
     path: /usr/local/upload/
   oss:
-    url: http://blog-ye.oss-cn-guangzhou.aliyuncs.com/
-    endpoint: oss-cn-guangzhou.aliyuncs.com
-    accessKeyId: LTAI4GGmNGUyroreaf5349NA
-    accessKeySecret: 3fi7UN3eW3sXJerfIQh1lxfCwG9UQx
-    bucketName: blog-ye
+    url: 
+    endpoint: 
+    accessKeyId: 
+    accessKeySecret: 
+    bucketName: 
 
 # 网站前台域名（邮件通知用）
 website:
